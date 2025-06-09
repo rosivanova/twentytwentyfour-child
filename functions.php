@@ -91,7 +91,7 @@ function handle_reservation_submission($request) {
         return new WP_Error('insert_error', 'Could not create reservation', ['status' => 500]);
     }
     
-    $headers = array('From: Guest House "Lodoz" <info@lodoz-obzor.com>');
+    $headers = array('From: Hotel "Paradise" <test@test.com>');
 
    wp_mail($email, 'Your Reservation is Pending/Вашата резервация е в процес на обработка', 
     "Hi $name,\n\nYour reservation has been received/Вашата резервация бе получена:\n" .
