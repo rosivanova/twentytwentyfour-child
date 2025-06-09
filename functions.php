@@ -10,7 +10,6 @@ function rt_reservation_page_styles() {
 
 	$version = file_exists($style_path) ? filemtime($style_path) : null;
 
-	//wp_enqueue_style( 'gosolar-zozo-child-style', $style_uri, array(), $version );
 	wp_enqueue_style( 'bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', array(), '5.3.3' );
 
 }
